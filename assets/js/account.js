@@ -47,7 +47,7 @@ export default class Account {
         var formdata = $(form).serialize();  
         $.ajax({
             type: 'GET',
-            url: '/login.json',
+            url: './login.json',
             data: formdata,
             success: function(result) {                   
                 if(result.status === 200) {
